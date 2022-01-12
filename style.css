@@ -1,0 +1,17 @@
+body{
+background-color: rgb(170, 190, 190);
+justify-content: center;
+margin: 12vh;
+}
+
+.container {
+background-color: rgb(65, 97, 139);
+font-size: 5vh;
+height: vh 50%;
+width: 50%;
+border: 5px black;
+border-radius: 7px;
+margin: auto;
+padding: 1ch;
+justify-content: center;
+}

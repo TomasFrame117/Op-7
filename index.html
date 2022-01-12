@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Oppgave 7</title>
+</head>
+<body>
+    <div class="container">
+        <input id="numberA" type="range" min="1" max="100" step="1" oninput="calculate()" value="2" />
+        <input id="numberB" type="range" min="1" max="100" step="1" oninput="calculate()" value="2" />
+        <div id="result"></div>
+    </div>
+
+    <script>
+        var RES = document.getElementById('result');
+        var inputNa = document.getElementById('numberA');
+        var inputNb = document.getElementById('numberB');
+
+        calculate();
+        function calculate() {
+            var numberA = parseInt(inputNa.value);
+            var numberB = parseInt(inputNb.value);
+            var sum = numberA + numberB;
+            var diffrnce = numberA - numberB;
+            var multiplie = numberA * numberB;
+            var kvotient = numberA / numberB;
+
+            RES.innerHTML = '' +
+                numberA + '+' + numberB + '=' + sum + '<br/>' +
+                numberA + '+' + numberB + '=' + diffrnce + '<br/>' +
+                numberA + '+' + numberB + '=' + multiplie + '<br/>' +
+                numberA + '+' + numberB + '=' + kvotient;
+        }
+    </script>
+</body>
+</html>
